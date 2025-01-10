@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hi Bab, how are you?</h1>
+        <div class="buttons">
+            <button onclick="showGood()">Okay</button>
+            <button onclick="showNo()">not okay</button>
+        </div>
+        <p id="message"></p>
+        <button class="next-button" onclick="window.location.href='date-night.html'">Next Page</button>
+
+    </div>
+
+    <script>
+        function showGood() {
+            document.getElementById("message").textContent = "thats good to hear bab";
+            document.getElementById("next").style.display = "inline-block";
+        }
+
+        function showNo() {
+            document.getElementById("message").textContent = "dapat okay yun bab";
+        }
+
+        function redirectToDateNight() {
+            window.location.href = "date-night.html";
+        }
+    </script>
+</body>
+</html>

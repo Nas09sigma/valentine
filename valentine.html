@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button onclick="showYes()">Yes bab</button>
+            <button onclick="showNo()">Yes</button>
+        </div>
+        <h2>walang option for "No"</h2>
+        <p id="message"></p>
+        <button class="next-button" onclick="window.location.href='celebrate.html'">Next Page</button>
+    </div>
+
+    <script>
+        function showYes() {
+            document.getElementById("message").textContent = "Nice one bab";
+            document.getElementById("next").style.display = "inline-block";
+        }
+
+        function showNo() {
+            document.getElementById("message").textContent = "yayyy";
+        }
+
+        function redirectToCelebrate() {
+            window.location.href = "celebrate.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It’s Date Night!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  <!-- Your custom stylesheet -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #4a4a4a;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            border: 2px solid #ffd1dc;
+            animation: pop 1s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6f91;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+            color: #4a4a4a;
+        }
+
+        /* Align the buttons in a column */
+        .movie-list {
+            display: flex;
+            flex-direction: column;  /* Align buttons vertically */
+            gap: 15px;
+        }
+
+        button {
+            background-color: #ffd1dc;
+            color: #4a4a4a;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff6f91;
+            color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Next Page Button */
+        .next-button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: #ff6f91;
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: #ff1a75;
+        }
+
+        /* Animations */
+        @keyframes pop {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>It’s Date Night! 🎥</h1>
+        <p>Pick one of these romantic movies for us to watch:</p>
+
+        <!-- Aligned movie selection buttons -->
+        <div class="movie-list">
+            <button onclick="alert('We’ll watch House 🩺🥼💉')">House</button>
+            <button onclick="alert('We’ll watch Shrek 🌟')">Shrek</button>
+            <button onclick="alert('We’ll watch The Substance 🧪')">The Substance</button>
+            <button onclick="alert('ill look for horror movies')">Horror Movies</button>
+        </div>
+    </div>
+
+    <!-- Next Page Button -->
+    <button class="next-button" onclick="window.location.href='valentine.html'">Next Page</button>
+</body>
+</html>
